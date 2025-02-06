@@ -1,0 +1,14 @@
+.lista-habilidades
+{
+    border: 1px solid red;
+    /* width: 500px; */
+    width: 50%;
+    font-size: 17px;
+    padding: 20px;
+    height: 400px;
+}
+
+.lista-habilidades h2{
+    text-align: start;
+    margin: 10px 10px;
+}

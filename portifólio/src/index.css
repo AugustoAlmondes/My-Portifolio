@@ -1,0 +1,14 @@
+:root{
+    font-family: Consolas, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    position: relative;
+    min-height: 100vh;
+}
