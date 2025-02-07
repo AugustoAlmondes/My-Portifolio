@@ -1,0 +1,145 @@
+.contato-area {
+    border-top: 3px solid #3b4448;
+    min-height: 100vh;
+    background: #2F4A52;
+    background: radial-gradient(at left bottom, #2c4249 0%, #121E21 70%);
+
+    padding: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+
+.contato-area-left {
+    width: 630px;
+    /* height: 500px; */
+
+    h1 {
+        font-weight: 400;
+        /* font-size: 55px; */
+        font-size: clamp(40px, 5vw, 55px);
+
+    }
+
+    h1 span,
+    h3 {
+        color: #638eea;
+    }
+
+    h3 {
+        margin-top: 10px;
+        font-size: 40px;
+        font-weight: 100;
+    }
+
+    ul {
+        margin-top: 40px;
+
+        li {
+            margin: 25px 0;
+            list-style: none;
+            font-size: 20px;
+
+            h2 {
+                font-weight: 100;
+            }
+
+            p {
+                font-size: 26px;
+                color: #638eea;
+            }
+        }
+    }
+}
+
+.contato-area-right {
+    width: 700px;
+    height: 500px;
+    padding-left: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    h2 {
+        font-weight: 100;
+        align-self: flex-start;
+        font-size: 37px;
+        margin-bottom: 70px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container-input-form {
+
+    position: relative;
+    margin: 20px 0;
+
+    input {
+        width: 540px;
+        height: 40px;
+        padding: 0px 20px;
+    }
+
+    textarea {
+        resize: none;
+        height: 200px;
+        width: 540px;
+        padding: 10px 20px;
+    }
+
+    label {
+        position: absolute;
+        left: 0;
+        top: -33px;
+        font-size: 23px;
+        font-weight: 100;
+    }
+
+    button {
+        background-color: #425e9b;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        height: 30px;
+        width: 250px;
+        font-size: 20px;
+        transition: .2s;
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid rgb(17, 172, 199);
+            box-shadow: 0 0 10px #425e9b,
+                0 0 30px #425e9bd3;
+            transform: scale(1.03);
+            background-color: white;
+            color: #425e9b;
+        }
+    }
+}
+
+.input-form-contato {
+    background-color: transparent;
+    border: 2px solid #638eea;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.direitos-reservados{
+    height: 60px;
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+    background-color: #181d25;
+    color: white;
+}
