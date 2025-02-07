@@ -113,7 +113,7 @@ export default function Especialidades() {
                     </a>
 
                     <a href="https://skillicons.dev">
-                        <img src="https://skillicons.dev/icons?i=express,nodejs,ps,figma" />
+                        <img src="https://skillicons.dev/icons?i=express,nodejs,ps,figma,netlify" />
                     </a>
 
                 </div>
