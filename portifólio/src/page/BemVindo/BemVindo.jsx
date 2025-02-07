@@ -3,6 +3,8 @@ import Imagem from '../../assets/fundoBV.png'
 import Avatar from '../../assets/augusto.png'
 import RedesBotaao from '../../components/RedesBotao.jsx'
 
+import Curriculo from '../../documents/Curriculo.pdf'
+
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import { MdOutlineEmail, MdOutlineKeyboardDoubleArrowDown } from 'react-icons/md'
 import Header from '../Header/Header.jsx'
@@ -12,7 +14,7 @@ import scrollToElement from '../../utils/Scroll.js'
 export default function BemVindo() {
     return (
         <>
-            <div className="bemvindo">
+            <div className="bemvindo" id='home'>
                 <Header />
                 <img className='img1' src={Imagem} />
                 <img className='img2' src={Imagem} />
@@ -29,8 +31,16 @@ export default function BemVindo() {
                         {/* <Titulo/> */}
 
                         <div className="botoes-conteudo">
-                            <button>View Portfólio <IoIosArrowForward fontSize={"13px"} /></button>
-                            <button>Curriculum Vitae < IoIosArrowForward fontSize={"13px"} /></button>
+                            <button
+                            onClick={() => scrollToElement('sobre')}
+                            >View Portfólio <IoIosArrowForward fontSize={"13px"} /></button>
+
+                            <a href={Curriculo} target="iframe_download" download={true}
+                                style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <button>
+                                    Curriculum Vitae < IoIosArrowForward fontSize={"13px"} />
+                                </button>
+                            </a>
                         </div>
 
                         {/* <div className="texto-conteudo">Aqui você encontrará uma coleção de trabalhos que refIetem minha jornada, habilidades e paixão pelo que faço. Seja no desenvolvimento de soluções criativas, projetos inovadores ou na aplicação prática de conhecimentos técnicos, cada projeto representa um passo na evolução da minha carreira e meu compromisso com a excelência. Navegue à vontade e descubra mais sobre minha visão, processos e experiências que moldam minha trajetória profissional.</div> */}
@@ -74,7 +84,7 @@ export default function BemVindo() {
                         </div>
                     </div>
                 </div>
-                <MdOutlineKeyboardDoubleArrowDown className='seta' onClick={() => {scrollToElement('sobre')}}/>
+                <MdOutlineKeyboardDoubleArrowDown className='seta' onClick={() => { scrollToElement('sobre') }} />
             </div>
         </>
     );

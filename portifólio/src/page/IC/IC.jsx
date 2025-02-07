@@ -1,7 +1,9 @@
 import './IC.css'
 import Image_IC from '../../assets/IC2.png'
 import { IoSearchSharp } from "react-icons/io5";
-import Artigo from '../../../public/Artigo.pdf'
+import Artigo from '../../documents/Artigo.pdf';
+import { IoMdDownload } from 'react-icons/io';
+import { MdOutlineArrowOutward } from 'react-icons/md';
 
 export default function IC() {
     return (
@@ -35,6 +37,8 @@ export default function IC() {
                                     ></iframe>
 
                                     Baixar Paper
+                                    <IoMdDownload
+                                        style={{ fontSize: '15px', marginLeft: '10px' }} />
                                 </button>
                             </a>
                             <a href="https://colab.research.google.com/drive/1umIPVSSHvREcrt5uPi3zhpAIFEQAicqK?usp=sharing"
@@ -44,6 +48,7 @@ export default function IC() {
                             >
                                 <button>
                                     Notebook Colab
+                                    <MdOutlineArrowOutward style={{ fontSize: '15px', marginLeft: '10px' }} />
                                 </button>
                             </a>
                         </div>

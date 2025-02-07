@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')).render(
     <BemVindo />
     <Sobre />
     <Especialidades />
-    {/* <Projetos /> */}
+    <Projetos />
     <IC />
     <Contato/>
 
