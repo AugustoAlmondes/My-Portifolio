@@ -89,10 +89,10 @@
 }
 
 .botoes-ic {
-    display: grid;
-    place-content: center;
-    text-align: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
     button {
         width: 300px;
@@ -123,6 +123,7 @@
 }
 
 @media screen and (max-width:600px) {
+
     .imagem-ic {
         /* width: 60%; */
         display: none;

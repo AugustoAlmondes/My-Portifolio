@@ -75,9 +75,10 @@
 
 .avatar {
     z-index: 2;
-    /* height: 80vh; */
+    /* height: 90vh; */
     /* position: absolute; */
-    transform: scale(.9);
+    width: 32vw;
+    /* transform: scale(.9); */
 }
 
 .seta {
@@ -104,17 +105,15 @@
 }
 
 .container-text-conteudo {
-    /* display: flex; */
-    height: 400px;
-    /* flex-direction: column; */
-    /* justify-content: space-evenly; */
+
     max-width: 700px;
     margin: 20px;
 }
 
 .bemvindo .conteudo .container-text-conteudo .titulo-conteudo {
     font-weight: bold;
-    font-size: 23px;
+    /* font-size: 23px; */
+    font-size: clamp(18px, 2vw, 20px);
     color: white;
 }
 
@@ -122,14 +121,6 @@
     font-weight: bold;
     color: #688fc0;
 }
-
-/* .bemvindo .conteudo .container-text-conteudo .texto-conteudo {
-    margin-top: 20px;
-    text-align: justify;
-    color: white;
-    font-size: 20px;
-} */
-
 
 @media screen and (max-width: 600px) {
 
@@ -144,7 +135,6 @@
 
     .bemvindo .conteudo .container-text-conteudo .titulo-conteudo {
         text-align: center;
-        font-size: 15px;
     }
 
     /* .bemvindo .conteudo .container-text-conteudo .texto-conteudo

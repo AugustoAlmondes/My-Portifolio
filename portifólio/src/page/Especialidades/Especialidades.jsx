@@ -101,15 +101,19 @@ export default function Especialidades() {
                     <h3>Skills</h3>
 
                     <a href="https://skillicons.dev">
-                        <img src="https://skillicons.dev/icons?i=html,css,react,bootstrap,vite,docker,vscode,discord,git,github" />
+                        <img src="https://skillicons.dev/icons?i=html,css,react,bootstrap,vite,vercel" />
                     </a>
 
                     <a href="https://skillicons.dev">
-                        <img src="https://skillicons.dev/icons?i=mysql,postgresql,prisma,mongodb,express,nodejs,c,python,js" />
+                        <img src="https://skillicons.dev/icons?i=docker,vscode,discord,git,github,pnpm,prisma" />
                     </a>
 
                     <a href="https://skillicons.dev">
-                        <img src="https://skillicons.dev/icons?i=pnpm,ps,figma,vercel" />
+                        <img src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,c,python,js" />
+                    </a>
+
+                    <a href="https://skillicons.dev">
+                        <img src="https://skillicons.dev/icons?i=express,nodejs,ps,figma" />
                     </a>
 
                 </div>
