@@ -6,7 +6,7 @@ import { MdOutlineEmail } from 'react-icons/md';
 export default function Contato() {
     return (
         <>
-            <div className="contato-area">
+            <div className="contato-area" id='contatos'>
                 <div className="contato-area-left">
                     <h1>SE <span>INTERESSOU</span> OU TEM ALGUNMA DÚVIDA?</h1>
                     <h3>Entre em contato</h3>

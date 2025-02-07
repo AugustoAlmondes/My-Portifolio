@@ -7,6 +7,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import { MdOutlineEmail, MdOutlineKeyboardDoubleArrowDown } from 'react-icons/md'
 import Header from '../Header/Header.jsx'
 import { IoIosArrowForward } from 'react-icons/io'
+import scrollToElement from '../../utils/Scroll.js'
 
 export default function BemVindo() {
     return (
@@ -73,7 +74,7 @@ export default function BemVindo() {
                         </div>
                     </div>
                 </div>
-                <MdOutlineKeyboardDoubleArrowDown className='seta' />
+                <MdOutlineKeyboardDoubleArrowDown className='seta' onClick={() => {scrollToElement('sobre')}}/>
             </div>
         </>
     );

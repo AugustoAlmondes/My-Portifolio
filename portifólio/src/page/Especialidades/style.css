@@ -52,11 +52,13 @@
 
 .detalhe-especialidade {
     display: flex;
+    position: relative;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
     color: white;
+    margin-bottom: 20px;
 
     h3 {
         margin-bottom: 30px;
@@ -67,12 +69,32 @@
         text-align: justify;
         max-width: 1000px;
         font-size: 22px;
-        height: 200px;
+        height: 230px;
     }
 
-    a img{
+    a img {
         cursor: auto;
         margin: 10px 0;
         height: 60px;
     }
+}
+
+.detalhe-button {
+    position: absolute;
+    bottom: 7px;
+    border-radius: 5px;
+    height: 35px;
+    width: 250px;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    color: #4ea1d8;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+        color: white;
+    }
+
+
 }

@@ -1,16 +1,18 @@
 import './style.css'
 import { useState } from 'react';
 import Background from '../../components/Background/Background'
+import scrollToElement from '../../utils/Scroll';
+import { MdOutlineArrowOutward, MdOutlineKeyboardDoubleArrowDown } from 'react-icons/md';
 
 export default function Especialidades() {
 
     const [detalhes, setDetalhes] = useState([
         `
-        Tenho experiência na implementação de redes neurais para classificação e contagem de objetos, utilizando modelos como Detectron2, Faster R-CNN e YOLOv5 para detecção de objetos. Também trabalho com manipulação de datasets no formato COCO e pré-processamento de imagens, além de realizar a extração e análise de métricas de desempenho, incluindo Recall, Precisão, F1-Score e Acurácia.
+        Tenho experiência na implementação de redes neurais para classificação e contagem de objetos. Minha iniciação na área de visão computacional inclui o uso de modelos avançados como Detectron2, Faster R-CNN e YOLOv5 para detecção. Além disso, trabalho com manipulação de datasets no formato COCO, pré-processamento de imagens e extração de métricas de desempenho, como Recall, Precisão, F1-Score e Acurácia, para avaliar a eficácia dos modelos.
         `,
 
         `
-        No desenvolvimento front-end, utilizo React.js para criar interfaces dinâmicas e responsivas, implementando React Router para o gerenciamento de rotas. Desenvolvo componentes reutilizáveis, integro APIs e aplico estilização moderna com CSS e frameworks especializados. Além disso, implemento toast notifications para proporcionar feedback interativo ao usuário.
+        Tenho experiência no desenvolvimento front-end, criando interfaces dinâmicas e responsivas com foco na usabilidade e na experiência do usuário. Utilizo React.js para desenvolver aplicações interativas, implementando React Router para o gerenciamento de rotas e criando componentes reutilizáveis para otimizar o desenvolvimento. Além disso, integro APIs para consumo de dados, aplico estilização moderna com CSS e frameworks especializados e utilizo técnicas de feedback interativo, como toast notifications. Busco sempre adotar boas práticas de desenvolvimento, garantindo código modular, eficiente e de fácil manutenção.
         `,
 
         `
@@ -24,16 +26,17 @@ export default function Especialidades() {
         'Coloque o mouse sobre uma especialidade',
     ]);
 
-
+    const [detalheNumber, setDetalheNumber] = useState(4);
     const [detalheAtual, setDetalheAtual] = useState(detalhes[4]);
 
     function handleDetalhes(index) {
         setDetalheAtual([detalhes[index]]);
+        setDetalheNumber(index);
     }
 
     return (
         <>
-            <div className="especialidades-area">
+            <div className="especialidades-area" id='especialidades'>
                 <div className="texto-especialidades">
                     <h1>ESPECIALIDADES EM</h1>
                 </div>
@@ -66,29 +69,54 @@ export default function Especialidades() {
 
                 <div className="detalhe-especialidade">
                     <h3>Detalhes</h3>
-                    <p>{detalheAtual}</p>
+                    <p>
+                        {
+                            detalheAtual
+                        }
+                    </p>
+                    {
+                        detalheNumber === 0 ?
+                            <button
+                                className='detalhe-button'
+                                onClick={() => scrollToElement('IC')}>
+                                Clique aqui para ver o projeto <MdOutlineKeyboardDoubleArrowDown style={{ fontSize: '13px' }} />
+                            </button>
+                            :
+                            detalheNumber === 3 ?
+                                <button
+                                    className='detalhe-button'
+                                    onClick={() => scrollToElement('design')}>
+                                    <a href="https://github.com/AugustoAlmondes/Project-Gallery" 
+                                        target="_blank"
+                                        style={{ textDecoration: 'none', color: 'inherit' }}
+                                    >
+                                        Ver Galeria </a> <MdOutlineArrowOutward style={{ fontSize: '13px' }} />
+                                </button>
+                                :
+                                null
+                    }
                 </div>
 
                 <div className="detalhe-especialidade">
                     <h3>Skills</h3>
 
                     <a href="https://skillicons.dev">
-                        <img src="https://skillicons.dev/icons?i=html,css,react,bootstrap,vite,docker,vscode,discord,git,github"/>
+                        <img src="https://skillicons.dev/icons?i=html,css,react,bootstrap,vite,docker,vscode,discord,git,github" />
                     </a>
 
                     <a href="https://skillicons.dev">
-                        <img src="https://skillicons.dev/icons?i=mysql,postgresql,prisma,mongodb,express,nodejs,c,python,js"/>
+                        <img src="https://skillicons.dev/icons?i=mysql,postgresql,prisma,mongodb,express,nodejs,c,python,js" />
                     </a>
 
                     <a href="https://skillicons.dev">
-                        <img src="https://skillicons.dev/icons?i=pnpm,ps,figma"/>
+                        <img src="https://skillicons.dev/icons?i=pnpm,ps,figma" />
                     </a>
 
                 </div>
                 <Background />
 
             </div>
-            
+
         </>
     );
 }

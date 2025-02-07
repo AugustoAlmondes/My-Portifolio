@@ -1,14 +1,15 @@
 import './IC.css'
 import Image_IC from '../../assets/IC2.png'
 import { IoSearchSharp } from "react-icons/io5";
+import Artigo from '../../../public/Artigo.pdf'
 
 export default function IC() {
     return (
         <>
-            <div className="container-ic">
+            <div className="container-ic" id='IC'>
                 <div className="conteudo-ic">
                     <div className="config-imagem-ic" >
-                        <img className="imagem-ic" src={Image_IC}/>
+                        <img className="imagem-ic" src={Image_IC} />
                         <legend> Detecção da bactéria em imagens de microscópio</legend>
                     </div>
 
@@ -25,12 +26,30 @@ export default function IC() {
                             </p>
                         </div>
                         <div className="botoes-ic">
-                            <button>Acessar Paper</button>
-                            <button>Notebook Colab</button>
+                            <a href={Artigo} target="iframe_download" download={true}
+                                style={{ textDecoration: 'none', color: 'inherit' }}
+                            >
+                                <button>
+                                    <iframe name="iframe_download"
+                                        style={{ display: 'none' }}
+                                    ></iframe>
+
+                                    Baixar Paper
+                                </button>
+                            </a>
+                            <a href="https://colab.research.google.com/drive/1umIPVSSHvREcrt5uPi3zhpAIFEQAicqK?usp=sharing"
+
+                                style={{ textDecoration: 'none', color: 'inherit' }}
+                                target='_blank'
+                            >
+                                <button>
+                                    Notebook Colab
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 }

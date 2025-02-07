@@ -41,7 +41,7 @@ export default function Projetos() {
 
     return (
         <>
-            <div className="projetos">
+            <div className="projetos" id='projetos'>
                 <div className="titulo-projetos">
                     <FaGithub />
                     <h1>Meus Projetos</h1>
