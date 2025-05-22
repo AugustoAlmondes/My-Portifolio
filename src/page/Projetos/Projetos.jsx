@@ -4,6 +4,9 @@ import { FaGithub } from 'react-icons/fa';
 import Projeto from '../../components/Projeto.jsx'
 import { useEffect, useState } from 'react';
 
+
+const hiddenRepos = ["AugustoAlmondes", "My-Portifolio", "Project-Gallery", "PDSI-2-WorkFinder", "Landing-Page-React", "workfinder"];
+
 export default function Projetos() {
 
     const [repositorios, setRepositorios] = useState([]);
@@ -49,18 +52,33 @@ export default function Projetos() {
 
                 <div className="container-projetos">
 
-                    {
+                    {/* {
                         repositorios.map((repo, index) => (
 
                             repo.nome === "AugustoAlmondes" ||
-                                repo.nome === "MyPortifolio" ||
-                                repo.nome === "Project-Gallery" ? null :
+                                repo.nome === "My-Portifolio" ||
+                                repo.nome === "Project-Gallery" ||
+                                repo.nome === "PDSI-2-WorkFinder" ||
+                                repo.nome === "Landing-Page-React" ||
+                                repo.nome === 'workfinder' ? null :
                                 <Projeto
                                     key={index}
                                     nome={repo.nome}
                                     linguagem={repo.linguagens}
                                     link={repo.link}
                                 />
+                        ))
+                    } */}
+                    {
+                        repositorios.map((repo, index) => (
+                            !hiddenRepos.includes(repo.nome) && (
+                                <Projeto
+                                    key={index}
+                                    nome={repo.nome}
+                                    linguagem={repo.linguagens}
+                                    link={repo.link}
+                                />
+                            )
                         ))
                     }
                 </div>
