@@ -7,6 +7,7 @@ import Projetos from './page/Projetos/Projetos'
 import Sobre from './page/Sobre/Sobre'
 import Especialidades from './page/Especialidades/Especialidades'
 import Contato from './page/Contato/Contato'
+import Deploys from './page/Deploys/Deploys.jsx'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
     <BemVindo />
     <Sobre />
     <Especialidades />
+    <Deploys/>
     <Projetos />
     <IC />
     <Contato/>

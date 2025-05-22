@@ -52,7 +52,10 @@
 
 
 @media screen and (max-width:600px) {
+    .header{
+        min-height: 80px
+    }
     .header h3 {
-        padding: 2px;
+        font-size: 15px;
     }
 }

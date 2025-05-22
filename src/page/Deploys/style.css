@@ -1,0 +1,46 @@
+.deploy-area {
+    min-height: 50vh;
+    padding: 50px;
+}
+
+.texto-deploy {
+    h1 {
+        font-size: 36px;
+        color: white;
+        text-align: center;
+        margin: 0 0 50px 0;
+    }
+}
+
+.big-projects {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+    li {
+        transition: .3s;
+        margin-bottom: 20px;
+        max-width: 400px;
+        img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 0 20px #050a14;
+            transition: .3s;
+        }
+    }
+
+    li:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+
+        img{
+            border: 1px solid rgb(17, 172, 199);
+            box-shadow: 0 0 10px #425e9b,
+                0 0 30px #425e9bd3;
+        }
+    }
+}

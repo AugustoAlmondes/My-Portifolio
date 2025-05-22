@@ -12,6 +12,10 @@
     align-items: center;
 }
 
+.botoes-conteudo{
+    min-height: 100px;
+}
+
 .botoes-conteudo button {
     border-radius: 10px;
     height: 50px;

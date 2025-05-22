@@ -109,7 +109,7 @@ export default function Especialidades() {
                     </a>
 
                     <a href="https://skillicons.dev">
-                        <img src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,c,python,js" />
+                        <img src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,c,python,js,ts" />
                     </a>
 
                     <a href="https://skillicons.dev">
