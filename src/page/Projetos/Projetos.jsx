@@ -47,7 +47,7 @@ export default function Projetos() {
             <div className="projetos" id='projetos'>
                 <div className="titulo-projetos">
                     <FaGithub />
-                    <h1>Meus Projetos</h1>
+                    <h1>Meus Repositórios</h1>
                 </div>
 
                 <div className="container-projetos">

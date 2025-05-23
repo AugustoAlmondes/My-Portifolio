@@ -8,7 +8,7 @@ export default function Especialidades() {
 
     const [detalhes, setDetalhes] = useState([
         `
-        Tenho experiência na implementação de redes neurais para classificação e contagem de objetos. Minha iniciação na área de visão computacional inclui o uso de modelos avançados como Detectron2, Faster R-CNN e YOLOv5 para detecção. Além disso, trabalho com manipulação de datasets no formato COCO, pré-processamento de imagens e extração de métricas de desempenho, como Recall, Precisão, F1-Score e Acurácia, para avaliar a eficácia dos modelos.
+        Tenho experiência na implementação de redes neurais para classificação e contagem de objetos. Minha iniciação na área de visão computacional inclui o uso de modelos avançados como Detectron2, Faster R-CNN e YOLO para detecção. Além disso, trabalho com manipulação de datasets, pré-processamento de imagens e extração de métricas de desempenho, como Recall, Precisão, F1-Score e Acurácia, para avaliar a eficácia dos modelos.
         `,
 
         `
@@ -86,7 +86,7 @@ export default function Especialidades() {
                                 <button
                                     className='detalhe-button'
                                     onClick={() => scrollToElement('design')}>
-                                    <a href="https://github.com/AugustoAlmondes/Project-Gallery" 
+                                    <a href="https://vsco.co/augusto-almondes/gallery" 
                                         target="_blank"
                                         style={{ textDecoration: 'none', color: 'inherit' }}
                                     >

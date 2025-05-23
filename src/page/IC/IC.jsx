@@ -41,7 +41,7 @@ export default function IC() {
                                         style={{ fontSize: '15px', marginLeft: '10px' }} />
                                 </button>
                             </a>
-                            <a href="https://colab.research.google.com/drive/1umIPVSSHvREcrt5uPi3zhpAIFEQAicqK?usp=sharing"
+                            {/* <a href="https://colab.research.google.com/drive/1umIPVSSHvREcrt5uPi3zhpAIFEQAicqK?usp=sharing"
 
                                 style={{ textDecoration: 'none', color: 'inherit' }}
                                 target='_blank'
@@ -50,7 +50,7 @@ export default function IC() {
                                     Notebook Colab
                                     <MdOutlineArrowOutward style={{ fontSize: '15px', marginLeft: '10px' }} />
                                 </button>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>

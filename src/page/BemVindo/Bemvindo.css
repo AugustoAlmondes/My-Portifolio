@@ -1,8 +1,8 @@
 .bemvindo {
     min-height: 100vh;
     padding-top: 40px;
-    background-color: #162024;
-    /* background: linear-gradient(0.25turn, #162024, #1f333b ); */
+    background-color: #000000;
+    background: radial-gradient(circle, #1e2636 2%, #000000  50%);
     /* background: linear-gradient(0.25turn, #0f1725, #152647); */
     position: relative;
     overflow: hidden;
@@ -74,6 +74,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
     /* position: relative; */
 }
 
@@ -109,7 +110,6 @@
 }
 
 .container-text-conteudo {
-
     max-width: 700px;
     margin: 20px;
 }
@@ -117,8 +117,9 @@
 .bemvindo .conteudo .container-text-conteudo .titulo-conteudo {
     font-weight: bold;
     /* font-size: 23px; */
-    font-size: clamp(18px, 2vw, 20px);
+    font-size: clamp(18px, 2vw, 30px);
     color: white;
+    margin-bottom: 30px;
 }
 
 .bemvindo .conteudo .container-text-conteudo .titulo-conteudo span {
@@ -139,6 +140,7 @@
 
     .bemvindo .conteudo .container-text-conteudo .titulo-conteudo {
         text-align: center;
+        bottom: 100px;
     }
 
     /* .bemvindo .conteudo .container-text-conteudo .texto-conteudo

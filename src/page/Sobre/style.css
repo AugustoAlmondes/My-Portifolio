@@ -1,6 +1,6 @@
 .sobre-area {
     min-height: 100vh;
-    background: linear-gradient(#162024, #101c35);
+    background: linear-gradient(#000000, #101c35);
     display: flex;
     justify-content: space-evenly;
     align-items: center;

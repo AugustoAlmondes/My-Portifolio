@@ -20,7 +20,7 @@ export default function BemVindo() {
                 <img className='img2' src={Imagem} />
 
                 <div className="conteudo">
-                    <img className='avatar' src={Avatar} />
+                    {/* <img className='avatar' src={Avatar} /> */}
 
                     <div className="container-text-conteudo">
 

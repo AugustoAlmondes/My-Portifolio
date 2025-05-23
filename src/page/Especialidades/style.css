@@ -86,7 +86,7 @@
     height: 35px;
     width: 250px;
     font-size: 15px;
-    background-color: transparent;
+    background-color: white;
     border: none;
     color: #4ea1d8;
     cursor: pointer;
@@ -94,7 +94,7 @@
 
     &:hover {
         color: white;
+        background-color: #4ea1d8;
     }
-
 
 }

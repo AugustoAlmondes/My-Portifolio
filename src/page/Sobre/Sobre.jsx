@@ -21,7 +21,7 @@ export default function Sobre() {
                             onClick={() => scrollToElement('especialidades')}
                         >Especialidades <MdOutlineKeyboardDoubleArrowDown style={{ fontSize: '15px' }} /></button>
                         <button
-                            onClick={() => scrollToElement('projetos')}
+                            onClick={() => scrollToElement('deploys')}
                         >Projetos < MdOutlineKeyboardDoubleArrowDown style={{ fontSize: '15px' }} /></button>
                     </div>
                 </div>

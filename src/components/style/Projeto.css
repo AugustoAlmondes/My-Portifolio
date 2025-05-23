@@ -1,5 +1,4 @@
-.link-projeto
-{
+.link-projeto {
     text-decoration: none;
 }
 
@@ -65,12 +64,16 @@
     background-color: yellow;
 }
 
+.TypeScript::before {
+    background-color: rgb(20, 20, 255);
+}
+
 .HTML::before {
     background-color: red;
 }
 
 .CSS::before {
-    background-color: blue;
+    background-color: rgb(0, 123, 194);
 }
 
 .C::before {
@@ -86,7 +89,7 @@
 }
 
 @media screen and (max-width:700px) {
-    .projeto{
-        max-width: 250px ;
+    .projeto {
+        max-width: 250px;
     }
 }

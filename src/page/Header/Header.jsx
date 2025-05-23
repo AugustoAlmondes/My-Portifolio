@@ -18,7 +18,7 @@ export default function Header() {
                         onClick={() => scrollToElement('especialidades')}
                     >Especialidades</h3>
                     <h3
-                        onClick={() => scrollToElement('projetos')}
+                        onClick={() => scrollToElement('deploys')}
                     >Projetos</h3>
                     <h3
                         onClick={() => scrollToElement('contatos')}
