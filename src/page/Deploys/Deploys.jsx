@@ -38,8 +38,8 @@ const otherProjects = [
         url: 'https://cep-search-react.netlify.app/',
     },
     {
-        name: 'GitHub Search User',
-        url: 'https://buscar-usuario-github.netlify.app/',
+        name: 'Viagens Landing Page',
+        url: 'https://viagem-landing-page.netlify.app/',
     },
     {
         name: 'Model Login',
