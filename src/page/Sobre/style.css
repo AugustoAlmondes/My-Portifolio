@@ -9,6 +9,9 @@
 
 .sobre-area img {
     width: 400px;
+    height: 500px;
+    object-fit: cover ;
+    border-radius: 10px 0px 60px 25px ;
 }
 
 .texto-sobre {

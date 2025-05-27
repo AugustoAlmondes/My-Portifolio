@@ -1,5 +1,5 @@
 import './style.css'
-import ImagemSobre from '../../assets/augusto2.png'
+import ImagemSobre from '../../assets/eu.jpg'
 import { MdOutlineKeyboardDoubleArrowDown } from 'react-icons/md';
 import scrollToElement from '../../utils/Scroll';
 
