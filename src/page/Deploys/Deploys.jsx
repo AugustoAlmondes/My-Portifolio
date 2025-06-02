@@ -2,6 +2,7 @@ import './style.css';
 import DonutImage from '../../assets/donut.png';
 import WorkImage from '../../assets/work.png';
 import BoostImage from '../../assets/boost.png';
+import CovidInage from '../../assets/covid.jpg';
 
 const projects = [
     {
@@ -21,7 +22,13 @@ const projects = [
         url: 'https://boost-ads.netlify.app',
         image: BoostImage,
         alt: 'boost'
-    }
+    },
+    {
+        name: 'Covid',
+        url: 'https://dashboard-cvd.netlify.app',
+        image: CovidInage,
+        alt: 'covid'
+    },
 ];
 
 const otherProjects = [
