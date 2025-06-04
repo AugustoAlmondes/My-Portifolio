@@ -1,145 +1,251 @@
+/* General Styling */
+:root {
+    --primary-color: #638eea;
+    --secondary-color: #425e9b;
+    --dark-bg-start: #2c4249;
+    --dark-bg-end: #121e21;
+    --text-color: white;
+    --border-color: #3b4448;
+}
+
 .contato-area {
-    border-top: 3px solid #3b4448;
+    border-top: 3px solid var(--border-color);
     min-height: 100vh;
-    background: #2F4A52;
-    background: radial-gradient(at left bottom, #2c4249 0%, #121E21 70%);
-
-    padding: 100px;
-
+    background: var(--dark-bg-start);
+    background: radial-gradient(at left bottom, var(--dark-bg-start) 0%, var(--dark-bg-end) 70%);
+    padding: 60px 20px; /* Adjusted padding for smaller screens */
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     justify-content: center;
     align-items: center;
     gap: 50px;
-    color: white;
+    color: var(--text-color);
+    text-align: center; /* Center text for general alignment */
 }
 
+/* Left Section */
 .contato-area-left {
-    width: 630px;
-    /* height: 500px; */
+    width: 100%; /* Full width on smaller screens */
+    max-width: 630px; /* Max width for larger screens */
+    padding: 0 15px; /* Add some horizontal padding */
 
     h1 {
         font-weight: 400;
-        /* font-size: 55px; */
-        font-size: clamp(40px, 5vw, 55px);
-
+        font-size: clamp(32px, 5vw, 55px); /* Slightly smaller clamp min-value */
+        margin-bottom: 10px; /* Add some space below heading */
     }
 
-    h1 span,
+    h1 .highlight,
     h3 {
-        color: #638eea;
+        color: var(--primary-color);
     }
 
     h3 {
         margin-top: 10px;
-        font-size: 40px;
+        font-size: clamp(28px, 4vw, 40px); /* Responsive font size */
         font-weight: 100;
+        margin-bottom: 30px; /* Space before list */
     }
 
-    ul {
+    .contact-info-list {
         margin-top: 40px;
+        padding: 0; /* Remove default padding from ul */
+        list-style: none; /* Ensure no bullets */
 
         li {
-            margin: 25px 0;
-            list-style: none;
-            font-size: 20px;
+            margin: 30px 0; /* Increased vertical margin */
+            font-size: 18px; /* Slightly smaller base font size */
+            text-align: left; /* Align list items to the left */
 
             h2 {
                 font-weight: 100;
+                margin-bottom: 5px; /* Space between heading and paragraph */
+                font-size: 22px; /* Adjust font size */
             }
 
             p {
-                font-size: 26px;
-                color: #638eea;
+                font-size: 24px; /* Adjust font size */
+                color: var(--primary-color);
+                word-break: break-all; /* Ensure long emails break correctly */
             }
         }
     }
 }
 
-.contato-area-right {
-    width: 700px;
-    height: 500px;
-    padding-left: 40px;
+.redes-area {
+    display: flex;
+    flex-wrap: wrap; /* Allow social media icons to wrap */
+    gap: 20px; /* Space between icons */
+    margin-top: 15px;
+    justify-content: center; /* Center icons within their container */
+    padding-right: 15px;
+}
 
+/* Right Section - Form */
+.contato-area-right {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 700px; /* Max width for larger screens */
+    padding: 0 15px; /* Add horizontal padding */
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center; /* Center form elements */
+    text-align: left; /* Align form labels and inputs to the left */
 
     h2 {
         font-weight: 100;
-        align-self: flex-start;
-        font-size: 37px;
-        margin-bottom: 70px;
+        font-size: clamp(30px, 4vw, 37px); /* Responsive font size */
+        margin-bottom: 50px; /* Adjust margin */
+        align-self: flex-start; /* Align heading to the start */
     }
 
     form {
+        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center; /* Center form elements */
     }
 }
 
-.container-input-form {
-
+.form-group {
     position: relative;
-    margin: 20px 0;
+    margin-bottom: 30px; /* More space between form groups */
+    width: 100%;
+    max-width: 540px; /* Match input/textarea width */
+}
 
-    input {
-        width: 540px;
-        height: 40px;
-        padding: 0px 20px;
-    }
-
-    textarea {
-        resize: none;
-        height: 200px;
-        width: 540px;
-        padding: 10px 20px;
-    }
-
-    label {
-        position: absolute;
-        left: 0;
-        top: -33px;
-        font-size: 23px;
-        font-weight: 100;
-    }
-
-    button {
-        background-color: #425e9b;
-        color: white;
-        border: none;
-        border-radius: 7px;
-        height: 30px;
-        width: 250px;
-        font-size: 20px;
-        transition: .2s;
-
-        &:hover {
-            cursor: pointer;
-            border: 1px solid rgb(17, 172, 199);
-            box-shadow: 0 0 10px #425e9b,
-                0 0 30px #425e9bd3;
-            transform: scale(1.03);
-            background-color: white;
-            color: #425e9b;
-        }
-    }
+.form-group label {
+    position: static; /* Remove absolute positioning */
+    display: block; /* Make label a block element */
+    margin-bottom: 8px; /* Space between label and input */
+    font-size: 20px; /* Adjust font size */
+    font-weight: 300; /* Slightly bolder for readability */
+    color: var(--text-color);
 }
 
 .input-form-contato {
     background-color: transparent;
-    border: 2px solid #638eea;
+    border: 2px solid var(--primary-color);
     border-radius: 5px;
-    color: white;
-    font-size: 20px;
-    margin-bottom: 20px;
+    color: var(--text-color);
+    font-size: 18px; /* Adjust font size */
+    padding: 12px 18px; /* Adjusted padding */
     outline: none;
+    width: 100%; /* Full width within its parent */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+
+    &:focus {
+        border-color: var(--secondary-color);
+        box-shadow: 0 0 8px rgba(99, 142, 234, 0.5); /* Subtle focus shadow */
+    }
 }
 
-.direitos-reservados{
+textarea.input-form-contato {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 120px; /* Minimum height for textarea */
+}
+
+.form-group button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 7px;
+    height: 45px; /* Slightly taller button */
+    width: 250px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    margin-top: 20px; /* Space above button */
+
+    &:hover {
+        border: 1px solid var(--primary-color);
+        box-shadow: 0 0 10px var(--secondary-color), 0 0 30px rgba(66, 94, 155, 0.82);
+        transform: scale(1.03);
+        background-color: var(--text-color);
+        color: var(--secondary-color);
+    }
+}
+
+/* Footer */
+.direitos-reservados {
     height: 60px;
     display: flex;
-    padding-left: 40px;
+    justify-content: center; /* Center content horizontally */
     align-items: center;
     background-color: #181d25;
-    color: white;
+    color: var(--text-color);
+    padding: 0 20px; /* Add horizontal padding */
+    text-align: center; /* Center text */
+
+    p {
+        font-size: 14px; /* Smaller font size for copyright */
+        margin: 0; /* Remove default margin */
+    }
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .contato-area {
+        flex-direction: column; /* Stack sections vertically */
+        padding: 40px 15px; /* Adjust padding */
+        gap: 40px; /* Reduce gap */
+    }
+
+    .contato-area-left,
+    .contato-area-right {
+        max-width: 100%; /* Allow sections to take full width */
+        padding: 0; /* Remove internal padding */
+    }
+
+    .contato-area-left {
+        h1 {
+            font-size: clamp(30px, 8vw, 45px); /* More aggressive clamping for smaller screens */
+        }
+        h3 {
+            font-size: clamp(24px, 6vw, 35px);
+        }
+    }
+
+    .redes-area {
+        justify-content: center; /* Ensure icons are centered on small screens */
+    }
+
+    .contato-area-right {
+        h2 {
+            align-self: center; /* Center form heading */
+            margin-bottom: 30px;
+        }
+    }
+
+    .form-group button {
+        width: 100%; /* Full width button on small screens */
+        max-width: 250px; /* But keep a reasonable max width */
+    }
+}
+
+@media (max-width: 480px) {
+    .contato-area-left {
+        h1 {
+            font-size: clamp(28px, 9vw, 40px);
+        }
+        h3 {
+            font-size: clamp(20px, 7vw, 30px);
+        }
+    }
+
+    .contact-info-list li {
+        font-size: 16px;
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 22px;
+        }
+    }
+
+    .input-form-contato {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
 }

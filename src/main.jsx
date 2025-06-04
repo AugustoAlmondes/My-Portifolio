@@ -17,7 +17,7 @@ createRoot(document.getElementById('root')).render(
     <Especialidades />
     <Deploys/>
     <Projetos />
-    <IC />
+    {/* <IC /> */}
     <Contato/>
 
   </StrictMode>,
