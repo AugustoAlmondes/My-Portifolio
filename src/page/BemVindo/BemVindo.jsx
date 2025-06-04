@@ -69,7 +69,7 @@ export default function BemVindo() {
                             />
                             <RedesBotaao
                                 IconComponent={FaLinkedin}
-                                url={"https://www.linkedin.com/in/augusto-almondes-812196231/"}
+                                url={"https://www.linkedin.com/in/augusto-almondes-teixeira"}
                                 height={50}
                                 width={50}
                                 fontSize={50}
