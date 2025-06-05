@@ -10,10 +10,7 @@ export default function Sobre() {
                 <div className="texto-sobre">
                     <h1>Sobre mim</h1>
                     <p>
-                        Meu nome é Augusto Almondes Teixeira e sou um entusiasta da tecnologia, sempre buscando aprimorar meus conhecimentos em desenvolvimento de software e inteligência artificial. Minha jornada acadêmica e profissional tem sido voltada para a resolução de problemas computacionais, com foco em aprendizado de máquina, visão computacional e desenvolvimento web.
-                        <br />
-                        <br />
-                        Atualmente, estou trabalhando em um projeto de classificação e contagem de bacilos utilizando redes neurais e desenvolvendo aplicações web utilizando React e Node.js. Também tenho experiência com bancos de dados SQL e NoSQL, além de conhecimento em estruturas de dados e algoritmos.
+                        Meu nome é Augusto Almondes Teixeira, um entusiasta da tecnologia com foco no desenvolvimento front-end. Sou apaixonado por construir interfaces de usuário intuitivas e performáticas, utilizando as mais recentes tecnologias do mercado. Minha experiência principal é com React e Node.js. Domino HTML5, CSS3, JavaScript moderno (ES6+) e estou começando a explorar o TypeScript. Tenho experiência com a integração de APIs RESTful/GraphQL, controle de versão com Git/GitHub, e estou constantemente explorando ferramentas e bibliotecas de animação para enriquecer a experiência do usuário.
                     </p>
 
                     <div className="botoes-sobre">
