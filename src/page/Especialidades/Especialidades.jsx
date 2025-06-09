@@ -101,7 +101,7 @@ export default function Especialidades() {
                     <h3>Skills</h3>
 
                     <a href="https://skillicons.dev">
-                        <img src="https://skillicons.dev/icons?i=html,css,react,bootstrap,vite,vercel" />
+                        <img src="https://skillicons.dev/icons?i=html,css,react,bootstrap,tailwind,vite,vercel" />
                     </a>
 
                     <a href="https://skillicons.dev">
