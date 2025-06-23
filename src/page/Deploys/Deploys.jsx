@@ -13,7 +13,7 @@ const projects = [
     },
     {
         name: 'WorkFinder',
-        url: 'https://workfinder-site.netlify.app',
+        url: 'https://workfinder-job.netlify.app',
         image: WorkImage,
         alt: 'workfinder'
     },
